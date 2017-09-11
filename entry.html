@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="./entry.css"/>
+</head>
+<body>
+
+<div id="data-con">
+    <textarea id="data" cols="50" rows="10" placeholder="请用英文输入法添加测试数据" onchange="repeat()"></textarea>
+    <input type="button" class="btn" id="excute" value="执行" onclick="excute()"/>
+    <input type="button" class="btn" id="submits" value="重测数据" onclick="repeat()"/>
+    <input type="button" class="btn" id="update" value="刷新" onclick="update()"/>
+</div>
+
+<br/>
+
+<div id="result-con">
+    <h1>执行结果：</h1>
+    <textarea name="" id="result" cols="50" rows="10" readonly="readonly"></textarea>
+</div>
+
+
+<script src="./entry.js"></script>
+</body>
+</html>
